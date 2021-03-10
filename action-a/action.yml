@@ -1,0 +1,17 @@
+name: "Hello Actions"
+description: "Print something"
+author: "octocat@github.com"
+
+inputs:
+  SOMETHING:
+    description: "What to print"
+    required: true
+    default: "World"
+
+runs:
+  using: "docker"
+  image: "Dockerfile"
+
+branding:
+  icon: "mic"
+  color: "purple"
